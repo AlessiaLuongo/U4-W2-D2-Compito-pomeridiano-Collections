@@ -3,7 +3,7 @@ import java.util.*;
 public class Main {
     public static void main(String[] args) {
 
-/*  ESERCIZIO
+ // ESERCIZIO 1
 
         Scanner scanner = new Scanner(System.in);
         System.out.println("How many words do you want to add?");
@@ -19,10 +19,8 @@ public class Main {
                 for (int i = 0; i < N; i++) {
                     System.out.print("Word " + (i + 1) + ": ");
                     String word = scanner.nextLine();
-                    if (wordsSet.contains(word)){
+                    if (!wordsSet.add(word)){
                         duplicateSet.add(word);
-                    } else {
-                        wordsSet.add(word);
                     }
                 }
             } catch (Exception ex) {
@@ -33,12 +31,14 @@ public class Main {
             System.out.println(duplicateSet.size());
         }
 
-*/
+
         System.out.println("Prima funzione: " + returnRandomNumberList(5));
         System.out.println("Seconda funziona: " + previousAndDouble(returnRandomNumberList(5)));
         System.out.println("Terza funzione: " + evenAndOddPosition(returnRandomNumberList(5)));
 
     }
+
+    // ESERCIZIO 2
 
     public static List<Integer>  returnRandomNumberList(int number) {
 
